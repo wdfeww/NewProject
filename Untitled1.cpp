@@ -10,17 +10,17 @@ void vypocetSplatky(float suma, float urok, int dlzka, float *splatka){
 main(){
 	float suma,urok,splatka,prijem;
 	int dlzka;
-	printf("zadajte sumu\n");
+	printf("Zadajte sumu\n");
 	scanf("%f",&suma);
-	printf("\nzadajte urok (p.a.)\n");
+	printf("\nZadajte urok (p.a.)\n");
 	scanf("%f",&urok);
-	printf("\ndlzku splatky (pocet mesiacov)\n");
+	printf("\nDlzku splatky (pocet mesiacov)\n");
 	scanf("%d",&dlzka);
-	printf("\nzadajte mesacny prijem\n");
+	printf("\nZadajte mesacny prijem\n");
 	scanf("%f",&prijem);
 	vypocetSplatky(suma,urok,dlzka,&splatka);
 	float max = prijem*0.15;
 	if(max>=splatka)
-	printf("pozicka je mozna vyska splatky je %.2f",splatka);
-	else printf("pozicka nieje mozna");
+	printf("Pozicka je mozna vyska splatky je %.2f",splatka);
+	else printf("Pozicka nieje mozna");
 }
